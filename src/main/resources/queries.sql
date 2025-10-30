@@ -4,11 +4,15 @@
 
 -- 2. Devuelve un listado de todos los alumnos que NO se han matriculado en ningún curso.
 
-
+SELECT *
+FROM matricula matr
+INNER JOIN alumno alum
+ON alum.alumno_id = matr.alumno_id
+WHERE matr.;
 
 -- 3. Devuelve una lista de los id's, nombres y emails de los alumnos que no tienen el teléfono registrado.
-
-
+use academia;
+SELECT * FROM  alumno alum WHERE alum.telefono = null;
 
 -- 4. Devuelva un listado con los id's y emails de los alumnos que se hayan registrado con una cuenta de yahoo.es.
 
